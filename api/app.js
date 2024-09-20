@@ -3,13 +3,13 @@ import staticRoute from "./routes/static.route.js";
 import './config/passport.config.js' 
 import passport from "passport"
 import authRoute from "./routes/auth.route.js"
-
+import cors from "cors"
 const app = express();
 
 // middlewares configuration 
 app.use(passport.initialize());
 app.use(express.json())
-
+app.use(cors())
 
 // Routes 
 

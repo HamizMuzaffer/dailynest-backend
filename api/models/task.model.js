@@ -11,6 +11,7 @@ const taskSchema = new Schema({
   });
   
 
-const Tasks = model("tasks", taskSchema)
+const Tasks = model("Tasks", taskSchema)
 
 export default Tasks; 
+
