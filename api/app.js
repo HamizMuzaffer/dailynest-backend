@@ -13,8 +13,8 @@ app.use(cors())
 // Routes 
 
 app.use("/api/v1/", staticRoute);
-app.use("/",(req,res)=>{
-    res.json({message : "Hello From Server"})
+app.get("/",(req,res)=>{
+    res.send("Hello From Server")
 })
 export default app;
 
