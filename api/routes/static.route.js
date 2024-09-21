@@ -8,10 +8,9 @@ router.get("/",(req,res)=>{
 
 // User Routes 
 router.post("/sign-up",createUser)
-router.get("/login",loginUser)
+router.post("/login",loginUser)
 
 
-// google auth route 
 
 
 export default router;

@@ -13,8 +13,11 @@ app.use(cors())
 
 // Routes 
 
-app.use("/api/v1", staticRoute);
+app.use("/api/v1/", staticRoute);
 app.use("/api/v1/auth",authRoute)
+app.use("/",(req,res)=>{
+    res.json({message : "Hello From Server"})
+})
 export default app;
 
 
